@@ -1,1 +1,23 @@
-//write your code here
+function chessboard() {
+    var pemain = ["Benteng", "Kuda", "Peluncur", "Raja", "Panglima", "Peluncur", "Kuda", "Benteng"]
+    var warna = [" Hitam", " Putih"]
+    var pion = [" Pion"]
+    var papan = [];
+    for (var i = 0; i < 8; i++) {
+        var tampung = []
+        for (var j = 0; j < 8; j++) {
+            tampung.push("")
+        }
+        papan.push(tampung)
+    }
+    for (var i = 0; i < 8; i++) {
+            papan[0][i] = pemain[i] + warna[0]
+            papan[1][i] = pion[0] + warna[0]
+            papan[6][i] = pion[0] + warna[1]
+            papan[7][i] = pemain[i] + warna[1]
+    }
+    // return papan;
+    // console.log("++++++++++++++++++++++");
+    return papan[7][0] == "Benteng Putih"
+}
+console.log(chessboard())
