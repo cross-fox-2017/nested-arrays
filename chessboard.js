@@ -8,19 +8,19 @@ let pionPutih = "Pion Putih";
 let kosong = "kosong";
 let chessBoard = [];
 
-chessBoard.push(kerajaanHitam)
-for (let i = 0; i < 6; i++) {
-  chessBoard.push([])
+for (let i = 0; i < 8; i++) {
+  chessBoard.push([]);
 }
-for (let j = 0; j < 8; j++) {
+
+for (let i = 0; i < 8; i++) {
+  chessBoard[0].push(kerajaanHitam[i]);
   chessBoard[1].push(pionHitam);
   chessBoard[2].push(kosong);
   chessBoard[3].push(kosong);
   chessBoard[4].push(kosong);
   chessBoard[5].push(kosong);
   chessBoard[6].push(pionPutih);
+  chessBoard[7].push(kerajaanPutih[i]);
 }
-
-chessBoard.push(kerajaanPutih)
 
 console.log(chessBoard)
