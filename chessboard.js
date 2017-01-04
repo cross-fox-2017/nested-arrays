@@ -1,22 +1,3 @@
-//write your code here
-// class person{
-// 	constructor(firsName,lastName){
-// 		this.firsName = firsName;
-// 		this.lastName = lastName;
-// 	}
-// }
-
-// var orang1 = new person('yoma','sofwan');
-
-// console.log(orang1.firsName);
-// console.log(orang1.lastName);
-
-// let chessboard = [
-// ['Benteng Putih','Kuda Putih','Gajah Putih','Menteri Putih','Raja Putih','Gajah Putih','Kuda Putih','Benteng Putih']
-// ];
-
-// console.log( (chessboard[0][7]) == 'Benteng Putih' );
-
 function chessboard(){
 arr = [];
 	let pion = 'Pion';
