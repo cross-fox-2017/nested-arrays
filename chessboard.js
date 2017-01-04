@@ -32,4 +32,4 @@ function chessBoard() {
   return arrTemp;
 }
 
- console.log(chessBoard()[7][0]); // benteng putih
+ console.log(chessBoard()[7][0] == 'Benteng putih'); //true
